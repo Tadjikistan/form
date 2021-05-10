@@ -10,7 +10,7 @@ $("$sub").on("click", function () {
     return false;
 
   }
-  $('#errormes').text("");
+  $("#errormes").text("");
 
 $.ajax({
   url:'php/mail.php',
