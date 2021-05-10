@@ -22,7 +22,10 @@ $.ajax({
     $("$sub").prop("disabled", true);
   },
   success: function(data){
-    alert(data);
+    if(data == false )
+    alert("Были ошибки , сообщение не отправленно !")
+    else
+    $("#form").trigger("reset");
     $("$sub").prop("disabled", false);
   }
 });
