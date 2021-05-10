@@ -1,11 +1,8 @@
 <?
-$recepient = 'artemik306space@gmail.com'
-$siteName = 'КУШАЛДОС ПТИЧКА'
-
-$name = trin($_POST['name']);
-$message = 'Имя: $name ';
-
-$pagetitle = 'Заявка с сайта \"$siteName\"';
-
-mail($recepient, $pagetitle , $message,  "Content-type: text/plain; chairset=\"UTF-8\"\n From: $recepient");
+$email = $_POST['email'];
+$name = $_POST['name'];
+$subject = "=?utf-8?B?" .base64_encode("Сообщение с сайта")."?=";
+$headers = "From: $email\r\nReply-to: $email\r\nContent-type: text/html; charset= UTF-8\r\n";
+$success = mail("artemik306space@gmail.com", $subject, $message, $headers);
+echo $success;
 ?>
