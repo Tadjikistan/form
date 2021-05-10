@@ -3,7 +3,7 @@ $("$sub").on("click", function () {
   var email = $('$email').val() .trim();
 
   if (email == "") {
-    $(#'errormes').text("Введите email");
+    $(#"errormes").text("Введите email");
     return false;
   } else if(name == '') {
     $(#"errormes").text("Введите ваше Имя");
