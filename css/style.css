@@ -1,0 +1,188 @@
+
+.toptext {
+ display: flex;
+ flex-wrap: wrap;
+
+}
+.text {
+ font-family: Montserrat;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 48px;
+ line-height: 120%;
+ color: white;
+}
+.background {
+width: 1920px;
+ height: 694px;
+ background: black;
+}
+.navigatoin {
+ display: flex;
+ justify-content: center;
+}
+
+.forms_nav {
+ display: flex;
+ flex-direction: row;
+justify-content: center;
+}
+.forma {
+ margin: 0 20px;
+ background: none;
+
+}
+.input1 {
+ border-radius: 8px;
+ font-family: Montserrat;
+ font-size: 18px;
+ line-height: 22px;
+ width: 340px;
+ height: 64px;
+ padding-left: 28px;
+}
+.input2 {
+ border-radius: 8px;
+ font-family: Montserrat;
+ font-size: 18px;
+ line-height: 22px;
+ width: 340px;
+ height: 64px;
+ padding-left: 28px;
+ margin: 0 20px;
+}
+
+
+.select {
+ border-radius: 8px;
+ width: 340px;
+ height: 68px;
+ font: 500 18px/22px 'Montserrat', sans-serif;
+ color: #999999;
+ padding-left: 28px;
+ cursor: pointer;
+}
+.subscribe_button {
+ text-decoration: none;
+ font-family: 'Montserrat', sans-serif;
+ padding: 19px 40px 19px 40px;
+ border: 2px solid #FFFFFF;
+ background: #05090C;
+color: #FFFFFF;
+cursor: pointer;
+
+border-radius: 8px;|
+ width: 340px;
+ height: 67px;
+}
+.subscribe_button:hover {
+background: #808080;
+}
+
+.subscribe_button:active {
+ background: #C0C0C0;
+ }
+.checkbox_input {
+ -webkit-appearance: none;
+ appearance: none;
+ position: absolute;
+}
+
+.color_text {
+ color: #E71096;
+}
+.checkbox_label {
+ padding-left: 25px;
+ color: white;
+ font-family: Roboto Condensed;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 16px;
+ line-height: 22px;
+}
+.checkbox {
+ position: relative;
+ display: flex;
+
+}
+.checkbox_label:before {
+ content: "";
+ display: block;
+ width: 16px;
+ height: 16px;
+ border: 1px solid #C0C0C0;
+ border-radius: 5px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 1;
+}
+
+.checkbox_label:after {
+ content: "";
+ display: block;
+ width: 16px;
+ height: 16px;
+background: url("../images/check.png") no-repeat;
+ background-size: 16px 16px;
+ opacity: 0;
+
+ position: absolute;
+top: 0;
+ left: 0;
+ z-index: 2;
+}
+.checkbox_input:checked + .checkbox_label:after {
+ opacity: 1;
+}
+.ty {
+  font-weight: normal;
+  font-family: "RobotoLight" , Helvetica , Arial , sans-serif;
+}
+.overlay_js_ty {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.popup_js_ty {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  left: 50%;
+  top: 50%;
+  transform: translate (-50%, -50%);
+  padding: 40px;
+  background-color: #FFF
+}
+.close_popup_js_ty{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 23px;
+  height: 23px;
+  cursor: painter;
+}
+.close_popup_js_ty:before {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  left: -4px;
+  transform: rotate(-45deg);
+}
+.close_popup_js_ty:after {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  transform: rotate(45deg);
+  left: -4px;
+}
